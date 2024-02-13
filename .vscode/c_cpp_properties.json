@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "G:\\repos\\ipc\\include",
+        "G:\\repos\\ipc\\lib"
+      ],
+      "compilerPath": "G:/New folder (2)/w64devkit-1.21.0/w64devkit/bin/gcc.exe",
+      "cStandard": "${default}",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}
