@@ -33,6 +33,14 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+*.sln
+*.vcxproj
+*.vcxproj.filters
+CMakeFiles/
+*.cmake
+CMakeCache.txt
+build/
+dist
 msc/
 # Visual Studio 2015/2017 cache/options directory
 .vs/
