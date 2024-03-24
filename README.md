@@ -1,6 +1,6 @@
 # IPC
 
-a utility to quickly get public ipv4 from [AmazonAWS Checkip](https://checkip.amazonaws.com)
+a utility to quickly get public ipv4 via curl from [IF Config](https://if-config.co)
 
 ## Project background:
 I needed a utility that doesnt rely on `curl.exe` from `C:\Windows\System32`.
