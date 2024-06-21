@@ -3,3 +3,7 @@ vcpkg_installed
 .vs
 .git
 .github
+/build/CMakeFiles
+/packages
+packages.config
+packer.html
