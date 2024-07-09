@@ -7,3 +7,7 @@ vcpkg_installed
 /packages
 packages.config
 packer.html
+CMakeLists.txt
+/build/*
+/x64/*
+/packages/*
