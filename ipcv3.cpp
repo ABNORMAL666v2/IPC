@@ -75,11 +75,11 @@ int main(int argc, char* argv[]) {
 			curl_easy_cleanup(curl);
 			return 0;
 		}
-		if (json_flag == false && pretty_flag == false) {
-			std::cout << "Please provide a flag: -pretty or -json\n" << std::endl;
-			curl_easy_cleanup(curl);
-			return 1;
-		}
+		//if (json_flag == false && pretty_flag == false) {
+		//	std::cout << "Please provide a flag: -pretty or -json\n" << std::endl;
+		//	curl_easy_cleanup(curl);
+		//	return 1;
+		//}
 		else {
 			ShowIp(response);
 			curl_easy_cleanup(curl);
