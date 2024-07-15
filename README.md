@@ -1,6 +1,6 @@
 # IPC
-
-a utility to quickly get public ipv4 via curl from [IF Config](https://if-config.co)
+a utility to quickly get public ipv4 via curl.
+![image](https://github.com/https433/IPC/assets/101961638/df572a25-f226-4dfd-98d1-d1674a7490a4)
 
 ## Project background:
 I needed a utility that doesnt rely on `curl.exe` from `C:\Windows\System32`.
@@ -14,3 +14,4 @@ I needed a utility that doesnt rely on `curl.exe` from `C:\Windows\System32`.
 I also wanted to remove many batch files from my projects because quite honestly batch files are fucking ugly.
 <h4>See License</h4>
 <a href="ABGSL V2.md">ABGSL V2</a>
+

@@ -19,3 +19,4 @@ installer/obj/
 installer/7z.dll
 
 installer/Resources/app.7z
+/installer/Resource1.resx
