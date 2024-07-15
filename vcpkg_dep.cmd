@@ -5,12 +5,16 @@ pause
 cls
 vcpkg install --triplet x64-windows
 vcpkg install --triplet x86-windows
+vcpkg install --triplet x64-windows-static
+vcpkg install --triplet x86-windows-static
 Echo. 
 Echo Install ARM/ARM64
 pause
 cls
 vcpkg install --triplet arm64-windows
 vcpkg install --triplet arm-windows
+vcpkg install --triplet arm64-windows-static
+vcpkg install --triplet arm-windows-static
 pause
 cls
 exit
