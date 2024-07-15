@@ -11,3 +11,11 @@ CMakeLists.txt
 /build/*
 /x64/*
 /packages/*
+
+installer/bin/
+
+installer/obj/
+
+installer/7z.dll
+
+installer/Resources/app.7z

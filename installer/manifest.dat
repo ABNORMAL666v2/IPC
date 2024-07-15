@@ -1,0 +1,14 @@
+﻿MANIFESTV=2
+[package]
+archpack=true
+archv=4
+ARM_64=ARM64
+ARM=ARM
+x86=Win32
+x64=x64
+[/package]
+[abn]
+Package_Name=ipc.exe
+util=true
+installdir=C:\abnu\
+[/abn]

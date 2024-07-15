@@ -1,12 +1,12 @@
 // ***********************************************************************
 // Assembly         : 
-// Author           : Anon
+// Author           : Abnormal666
 // Created          : 03-12-2024
 //
-// Last Modified By : Anon
-// Last Modified On : 06-11-2024
+// Last Modified By : Abnormal666
+// Last Modified On : 07-15-2024
 // ***********************************************************************
-// <copyright file="ipcv3.cpp" company="">
+// <copyright file="ipcv3.cpp" company="Abnormal666">
 //     Copyright (c) . All rights reserved.
 // </copyright>
 // <summary></summary>
@@ -17,7 +17,9 @@
 #include <rapidjson/document.h>
 #include <rapidjson/prettywriter.h>
 #include <rapidjson/stringbuffer.h>
-
+#pragma comment(lib, "Ws2_32.Lib")
+#pragma comment(lib, "Wldap32.Lib")
+#pragma comment(lib, "Crypt32.Lib")
 
 size_t write_callback(void* buffer, size_t size, size_t nmemb, std::string* userdata) {
 	size_t totalSize = size * nmemb;
