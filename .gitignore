@@ -20,3 +20,9 @@ installer/7z.dll
 
 installer/Resources/app.7z
 /installer/Resource1.resx
+
+ip-whois-app/node_modules/
+
+_ReSharper.Caches/
+
+ip-whois-app/

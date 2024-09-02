@@ -9,11 +9,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPC Installer", "installer\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{354ACD48-44A8-42E7-83DE-B3F78487C7F0}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		ABGSL V2.md = ABGSL V2.md
 		README.md = README.md
 		vcpkg-configuration.json = vcpkg-configuration.json
 		vcpkg.json = vcpkg.json
 		vcpkg_dep.cmd = vcpkg_dep.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "reactapp", "reactapp", "{B80B9240-4082-49B0-BA1D-94A1F3F63621}"
+	ProjectSection(SolutionItems) = preProject
+		ip-whois-app\package-lock.json = ip-whois-app\package-lock.json
+		ip-whois-app\package.json = ip-whois-app\package.json
+		ip-whois-app\postcss.config.js = ip-whois-app\postcss.config.js
+		ip-whois-app\tailwind.config.js = ip-whois-app\tailwind.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{73EEF3CE-9712-495F-B9F8-F0AD359FDF77}"
+	ProjectSection(SolutionItems) = preProject
+		ip-whois-app\src\index.css = ip-whois-app\src\index.css
+		ip-whois-app\src\IpWhoisQuery.js = ip-whois-app\src\IpWhoisQuery.js
 	EndProjectSection
 EndProject
 Global
@@ -69,6 +84,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73EEF3CE-9712-495F-B9F8-F0AD359FDF77} = {B80B9240-4082-49B0-BA1D-94A1F3F63621}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFF55C95-E997-4FEE-8C20-2F0F1B918C53}

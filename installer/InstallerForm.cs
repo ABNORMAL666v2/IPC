@@ -120,11 +120,14 @@ namespace IPC_Installer
                 var destPath = Path.Combine(pgmInstDir, filename);
 
                 if (!Directory.Exists(pgmInstDir))
+                {
                     Directory.CreateDirectory(pgmInstDir);
-
-                File.Copy(sourcePath, destPath, true);
-                MessageBox.Show($"Successfully created {pgmInstDir}");
-                AddToPath(pgmInstDir);
+                    MessageBox.Show($"Successfully Installled to {filename} @ {pgmInstDir}");
+                    AddToPath(pgmInstDir);
+                    File.Copy(sourcePath, destPath, true);
+                }
+                else
+                    File.Copy(sourcePath, destPath, true);
             }
             catch (Exception ex)
             {
@@ -135,17 +138,18 @@ namespace IPC_Installer
 
         private void AddToPath(string installedPath)
         {
-            string batScript = $@"@echo off
-setx path ""%PATH%;{installedPath}""
-echo Set path successfully.
-exit";
+            string PathScript = $@"
+                    @echo off
+                    setx path ""%PATH%;{installedPath}""
+                    echo Set path successfully.
+                    ping 127.0.0.1 -w 4 > NULL
+                    exit";
 
-            string temp = Path.GetTempPath();
-            string tempBatName = Path.Combine(temp, Guid.NewGuid().ToString() + ".bat");
-            File.WriteAllText(tempBatName, batScript);
-            var process = System.Diagnostics.Process.Start(tempBatName);
+            string PathFileName = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString() + ".bat");
+            File.WriteAllText(PathFileName, PathScript);
+            var process = System.Diagnostics.Process.Start(PathFileName);
             process?.WaitForExit();
-            File.Delete(tempBatName);
+            File.Delete(PathFileName);
         }
 
         public static Dictionary<string, string> LoadConfig(string settingFile)

@@ -1,15 +1,15 @@
 // ***********************************************************************
-// Assembly         : 
+// Assembly         : IPC
 // Author           : Abnormal666
 // Created          : 03-12-2024
 //
 // Last Modified By : Abnormal666
-// Last Modified On : 07-15-2024
+// Last Modified On : 08-01-2024
 // ***********************************************************************
 // <copyright file="ipcv3.cpp" company="Abnormal666">
 //     Copyright (c) . All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>IP Util</summary>
 // ***********************************************************************
 #include <iostream>
 #include <string>
